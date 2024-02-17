@@ -1,0 +1,23 @@
+input[type=text] {
+    width: 130px;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+    font-size: 12px;
+
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    background-color: white;
+
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    background-color: #ccc;
+    font-size: 12px;
+    width: 80%;
+}
