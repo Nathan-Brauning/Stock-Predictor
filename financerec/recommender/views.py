@@ -13,7 +13,9 @@ def receive_data_from_js(request):
         input_data = received_data.get('input_data')
 
         '''Logic!!!
-            Here is where we'll construct 
+            Here is where we'll construct the json response with the processed data,
+            we can probably incorproate the logic that Nate wrote in the Jupyter notebook here,
+            construct a JSON response, then send it back to the front end for parsing and display
         '''
         return JsonResponse({'message:' 'Data received successfully'})
     else:
