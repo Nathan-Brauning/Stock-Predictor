@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from recommender.views import receive_data_from_js, renderView
 
 urlpatterns = [
+    path('frontend/', renderView),
+    path('backend/', receive_data_from_js),
     path('admin/', admin.site.urls),
 ]

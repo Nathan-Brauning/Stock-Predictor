@@ -14,4 +14,3 @@ def receive_data_from_js(request):
 
         # If the response is not POST, return an error response
         return JsonResponse({'error': 'Only POST requests are allowed'})
-
