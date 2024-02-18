@@ -32,3 +32,11 @@ input[type=text]:focus {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.belowGraph {
+    position: absolute;
+    top: 530px;
+    left: 25px;
+    background-color: rgb(255, 255, 255);
+
+}

@@ -5,23 +5,35 @@
 
         <title>Testing backend stuff</title>
         <link rel="stylesheet" href="context.css">
-        <script src="backend2.js"></script>
+
+        <!-- This import is used for graphing without including a backend-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+        <!-- our code -->
+        <script src="frontend.js"></script>
+        
     </head>
 
     <body>
-        <p1 id="title" class="centered">Capitol Trading Tracker</p1>
+        <h1 id="title">Stock Analyzer: input a ticker to get its data</h1></h1>
 
-        <form id="tickercollector", method="POST" action="/backend/">
-            <label for="ticker">data: </label>
+        <form id="tickercollector">
+            <label for="ticker">Ticker: </label>
             <input type="text" id="ticker" name="ticker", placeholder="Input Ticker: ">
-            <button type="button" onclick="sendData()">Submit</button>
+            <button type="button" onclick="">Submit</button>
         </form>
 
-        <script src="https://cdn.jsdelivr.net/npm/axios/min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/cheerio"></script>
-        <script src="scraper.js"></script>
-
         <p id="receivedData"></p>
+        
+        <p id="shouldInvest" class="belowGraph"> shouldInvest <p>
 
+        <svg width="600" height="800"
+        xmlns="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBDgMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIG/8QAFxABAQEBAAAAAAAAAAAAAAAAAAFBEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOqBFZBQEKAIAggoogqAqCoAAIsAAAAAAAAAAAAAAAAAFAUUEAoACKAgAACAAAAAAAAAAAAAAoAIAAAAAAKAoogAAAACCgIAAAgAAAAAAAAAAAAAAAAAAAAoCgAAAAIIKgKAAACAAAAAAAAAAAAACKKIqABQBFFUBUAQFABAAAAAAAEABQAQEUAgICiAKgoCCggAKIAogDVAUBFARUAAAAQAFATqgCKAIoACCKICgAiiAqAAAAAAADQCgigIqAAAAAACAAoCCCiKAIsAAAABFEAAAAAAwAAGhBQUAQACKkVBKAoAIAICiAKACKigBAAEA0AAAAAAAAAFVBRcQAAAAEABQAQAAQUBAUEAAWIAqAAAAAAAAAAADSAoAAAAAIACgAAgIAACgogCAAAAAAoAIAAAAAAP/9k=" </svg>
+            <rect width="600" height="400"
+        x="15" y="0" rx="0" ry="0"
+        fill="grey" />
+
+
+        <canvas id="graph" width="400" height="400"></canvas>
     </body>
 </htmL>
