@@ -19,5 +19,16 @@ input[type=text] {
 input[type=text]:focus {
     background-color: #ccc;
     font-size: 12px;
-    width: 80%;
+    width: 60%;
+}
+
+#title {
+    font-size: 20px;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
