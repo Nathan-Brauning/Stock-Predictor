@@ -1,1 +1,0 @@
-// ok so we gotta make a get request to the page we needa scrape
